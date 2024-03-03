@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|c:\\users\\megar\\programacion\\unity\\proyectos\\arcade-bullet-hell-template\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|c:\\users\\megar\\programacion\\unity\\proyectos\\arcade-bullet-hell-template\\assets\\characters\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|solutionrelative:assets\\characters\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PlayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,18 +24,25 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Characters\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Characters\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Characters\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Characters\\Player\\PlayerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T17:22:21.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
               "ToolTip": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\PlayerController.cs",
               "RelativeToolTip": "Assets\\PlayerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T01:13:19.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-03-02T01:13:19.924Z"
             }
           ]
         }
