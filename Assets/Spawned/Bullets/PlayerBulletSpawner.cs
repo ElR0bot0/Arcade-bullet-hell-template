@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletSpawner : MonoBehaviour
+public class PlayerBulletSpawner : MonoBehaviour
 {
     enum SpawnerType {Straight, Spin}
-    public enum Objective : int {Enemy=0, Player=1}
     [Header("Bullet Attributes")]
-    public Objective BulletObjective;
     public GameObject Bullet;
     public float Bulletlife=7f;
     public float Bulletspeed=1f;
@@ -26,9 +24,12 @@ public class BulletSpawner : MonoBehaviour
     }
 
     // Update is called once per frame
+    //Esto tal vez se pueda usar despues, lo que hace originalmente es darle un rate of fire a esta vaina pero por ahora por terminos de simplicidad lo quito
+        /*
     void Update()
     {
         timer += Time.deltaTime;
+        
         if(spawner== SpawnerType.Spin){
             transform.eulerAngles= new Vector3(0f,0f,transform.eulerAngles.z+1f);
         }
@@ -36,12 +37,12 @@ public class BulletSpawner : MonoBehaviour
             Fire();
             timer=0;
         }
+        
     }
-
-    private void Fire(){
+*/
+    public void Fire(){
         if(Bullet){
             spawnedbullet = Instantiate(Bullet, transform.position, Quaternion.identity);
-            spawnedbullet.GetComponent<Bullet>().objective = (Bullet.Objective)BulletObjective;
             spawnedbullet.GetComponent<Bullet>().Speed = Bulletspeed;
             spawnedbullet.GetComponent<Bullet>().Bulletlife = Bulletlife;
             spawnedbullet.transform.rotation = transform.rotation;

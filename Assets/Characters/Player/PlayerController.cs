@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed =1f;
     public ContactFilter2D movementFilter;
     Animator animator;
-    public Blast blastAttack;
+    public PlayerBulletSpawner blastAttack;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     Rigidbody2D rb;
     // Start is called before the first frame update
@@ -66,6 +66,6 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnFire(){
-        blastAttack.StartBlast();
+        blastAttack.Fire();
     }
 }
