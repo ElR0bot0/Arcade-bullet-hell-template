@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyShip : MonoBehaviour
 {
+
+    Collider2D BlastCollider;
+    Animator animator;
+    public float health = 1;
     public float Health {
         set{
             health = value;
@@ -17,9 +21,6 @@ public class EnemyShip : MonoBehaviour
         }
     }
     
-    Collider2D BlastCollider;
-    Animator animator;
-    public float health = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +35,6 @@ public class EnemyShip : MonoBehaviour
     }
 
     public void Dies(){
-        
         Destroy(gameObject);
     }
 }

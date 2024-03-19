@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7067505773886728620}
   - component: {fileID: 6748575582224010983}
   - component: {fileID: 9064004974011594312}
+  - component: {fileID: 2825384984373842577}
   - component: {fileID: 6712885004277325756}
   - component: {fileID: 7409080915631338346}
   - component: {fileID: 4744072990404266660}
@@ -150,6 +151,24 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   blastAttack: {fileID: 4139967116453018214}
+  health: 0
+  maxHealth: 0
+--- !u!114 &2825384984373842577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138962062752065270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcebc70a26c63a42b8133b143f2e970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  maxHealth: 5
+  Containers:
+  - {fileID: 283637394099866726, guid: 30e7b9e936217cc409e42fac10fbce79, type: 3}
 --- !u!50 &6712885004277325756
 Rigidbody2D:
   serializedVersion: 4

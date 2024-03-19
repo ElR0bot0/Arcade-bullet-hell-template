@@ -46,6 +46,10 @@ public class Bullet : MonoBehaviour
             {
                 enemy.Health -= DamagePower;
             }
+            if(other.TryGetComponent<PlayerHealth>(out var player))
+            {
+                player.Health -= DamagePower;
+            }
         }
     }
 }
