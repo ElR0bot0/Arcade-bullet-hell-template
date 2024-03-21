@@ -11,14 +11,10 @@ public class PlayerHealth : MonoBehaviour
     //Declaracion para manejar la vida
     public float health;
     public float maxHealth;
-    Rigidbody2D rb;
-    Collider2D BlastCollider;
     public GameObject[] Containers;
     Animator animator;
     void Start()
     {
-        BlastCollider = GetComponent<Collider2D>();
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
     public float Health

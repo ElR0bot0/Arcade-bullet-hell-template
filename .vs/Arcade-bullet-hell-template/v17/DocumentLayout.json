@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|c:\\users\\megar\\programacion\\unity\\proyectos\\arcade-bullet-hell-template\\assets\\scripts\\ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|c:\\users\\megar\\programacion\\unity\\proyectos\\arcade-bullet-hell-template\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|c:\\users\\megar\\programacion\\unity\\proyectos\\arcade-bullet-hell-template\\assets\\scripts\\characters\\enemyship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\enemyship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\assets\\scripts\\characters\\player health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\characters\\player health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\assets\\scripts\\ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B13882F9-12EE-C2B2-4AB9-C9B96F761BC0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,6 +31,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager.cs",
+              "ToolTip": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\GameManager.cs",
+              "RelativeToolTip": "Assets\\GameManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T02:11:18.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyShip.cs",
+              "DocumentMoniker": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Scripts\\Characters\\EnemyShip.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\EnemyShip.cs",
+              "ToolTip": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Scripts\\Characters\\EnemyShip.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Characters\\EnemyShip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T01:38:02.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player Health.cs",
+              "DocumentMoniker": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Scripts\\Characters\\Player Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Characters\\Player Health.cs",
+              "ToolTip": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Scripts\\Characters\\Player Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Characters\\Player Health.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T23:47:58.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\megar\\Programacion\\Unity\\Proyectos\\Arcade-bullet-hell-template\\Assets\\Scripts\\UI\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenu.cs",
@@ -26,8 +76,7 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T00:25:43.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-20T00:25:43.906Z"
             }
           ]
         }

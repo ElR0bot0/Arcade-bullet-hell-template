@@ -8,6 +8,7 @@ public class EnemyShip : MonoBehaviour
     Collider2D BlastCollider;
     Animator animator;
     public float health = 1;
+    public int PointsValueOnKill=10;
     public float Health {
         set{
             health = value;
@@ -35,6 +36,7 @@ public class EnemyShip : MonoBehaviour
     }
 
     public void Dies(){
+        FindObjectOfType<GameManager>().ScoreUpdate(PointsValueOnKill);
         Destroy(gameObject);
     }
 }
