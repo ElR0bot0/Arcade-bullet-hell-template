@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
 
     //Declaracion para Bullets y daño
-    public PlayerBulletSpawner blastAttack;
+    public PlayerBulletSpawner BulletSpawner;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     Rigidbody2D rb;
 
@@ -73,6 +73,6 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnFire(){
-        blastAttack.Fire();
+        BulletSpawner.Fire();
     }
 }

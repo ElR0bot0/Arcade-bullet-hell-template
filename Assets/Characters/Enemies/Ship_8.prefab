@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1376142691733179256}
   - component: {fileID: -2001418786834848813}
   - component: {fileID: 374733095609803565}
+  - component: {fileID: 6639125214963792797}
   - component: {fileID: 2136517918375098476}
   m_Layer: 0
   m_Name: Ship_8
@@ -160,6 +161,85 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.07539317, y: 0.055814028}
   m_EdgeRadius: 0
+--- !u!114 &6639125214963792797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020294301227955522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d39b51699deaa4f923d28de4ba4b3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: 0
+  DamagePower: 1
+  Speed: 1
+  Rotation: 0
+  Bulletlife: 7
+  health: 1
+  PointsValueOnKill: 10
+  speed: 5
+  startTime: 0
+  endTime: 10
+  trajectoryX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 2.3152313
+      value: 0.19910508
+      inSlope: -0.018786512
+      outSlope: -0.018786512
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.74858224
+    - serializedVersion: 3
+      time: 2.653579
+      value: 0.2220388
+      inSlope: 0.0079511255
+      outSlope: 0.0079511255
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3.0958087
+      value: 0.19909625
+      inSlope: 0.045423087
+      outSlope: 0.045423087
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.6701552
+      outWeight: 0
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+    m_RotationOrder: 4
+  trajectoryY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 2.0339036
+      value: 0.19419283
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 3.0339036
+      value: 0.19419283
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &2136517918375098476
 Animator:
   serializedVersion: 5
@@ -190,8 +270,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 3324719223849843601}
     m_Modifications:
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: Spawned
+      value: 
+      objectReference: {fileID: 5304952647043279188, guid: 7ee067cad668c7840adcb76637217b70, type: 3}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: BulletObjective
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: SpawnedObjective
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.x
