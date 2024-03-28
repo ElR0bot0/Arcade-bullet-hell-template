@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnedObjective: 0
-  Spawned: {fileID: 0}
+  Spawned: {fileID: 5304952647043279188, guid: 7ee067cad668c7840adcb76637217b70, type: 3}
   SpawnedLife: 5
   SpawnedSpeed: 1
   spawner: 0

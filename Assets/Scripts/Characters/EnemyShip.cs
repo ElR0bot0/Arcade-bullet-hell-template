@@ -11,7 +11,13 @@ public class EnemyShip : Spawnable
     public float health = 1;
     public int PointsValueOnKill=10;
 
-    private float currentTime = 0f; // Current time
+
+    // Start is called before the first frame update
+    public override void Start()
+    {
+        animator = GetComponent<Animator>();
+        base.Start();
+    }
     public float Health {
         set{
             health = value;
@@ -23,32 +29,6 @@ public class EnemyShip : Spawnable
         get {
             return health;
         }
-    }
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    // Update is called once per frame
-    public override void Update()
-    {
-        // Increment time
-        currentTime += Time.deltaTime;
-
-        // If we reached the end of the trajectory, reset time
-        if (currentTime > endTime)
-        {
-            currentTime = startTime;
-        }
-
-        // Evaluate trajectory curves to get position
-        float x = trajectoryX.Evaluate(currentTime);
-        float y = trajectoryY.Evaluate(currentTime);
-        
-        // Move the object
-        transform.position = new Vector3(x, y, 0f) * speed;
     }
 
     public override void Dies(){

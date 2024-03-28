@@ -98,9 +98,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c3371aad6958c45a71e0bced703ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objective: 0
+  DamagePower: 1
   Speed: 1
   Rotation: 0
-  Bulletlife: 7
+  DurationOfLife: 7
+  RelativeSpeed: 5
+  startTime: 0
+  endTime: 10
+  trajectoryX:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.00006933301
+      value: 0.000047533773
+      inSlope: -0.010338252
+      outSlope: -0.010338252
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+    m_RotationOrder: 4
+  trajectoryY:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.00006933301
+      value: 0.000047533773
+      inSlope: -0.010338252
+      outSlope: -0.010338252
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 0
+    m_PostInfinity: 0
+    m_RotationOrder: 4
 --- !u!61 &5859808213246924697
 BoxCollider2D:
   m_ObjectHideFlags: 0

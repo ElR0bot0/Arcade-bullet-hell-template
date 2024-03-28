@@ -30,7 +30,7 @@ namespace Assets.Scripts.General
         Collider2D BlastCollider;
         #endregion
         // Start is called before the first frame update
-        void Start()
+        public virtual void Start()
         {
             spawnpoint = new Vector2(transform.position.x, transform.position.y);
             BlastCollider = GetComponent<Collider2D>();
@@ -42,13 +42,13 @@ namespace Assets.Scripts.General
             if (timer > DurationOfLife) Destroy(this.gameObject);
             timer += Time.deltaTime;
             RelativePoint = Movement(timer);
-            transform.position = RelativeMovement(timer);
+            transform.position = RelativePoint + RelativeMovement(timer);
         }
 
         private Vector2 Movement(float timer)
         {
-            float x = timer * Speed * RelativePoint.x;
-            float y = timer * Speed * RelativePoint.y;
+            float x = timer * Speed * transform.right.x;
+            float y = timer * Speed * transform.right.y;
             return new Vector2(x + spawnpoint.x, y + spawnpoint.y);
         }
 

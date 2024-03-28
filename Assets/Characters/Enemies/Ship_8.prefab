@@ -177,41 +177,21 @@ MonoBehaviour:
   DamagePower: 1
   Speed: 1
   Rotation: 0
-  Bulletlife: 7
-  health: 1
-  PointsValueOnKill: 10
-  speed: 5
+  DurationOfLife: 7
+  RelativeSpeed: 5
   startTime: 0
   endTime: 10
   trajectoryX:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 2.3152313
-      value: 0.19910508
-      inSlope: -0.018786512
-      outSlope: -0.018786512
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.74858224
-    - serializedVersion: 3
-      time: 2.653579
-      value: 0.2220388
-      inSlope: 0.0079511255
-      outSlope: 0.0079511255
+      time: 0.00006933301
+      value: 0.000047533773
+      inSlope: -0.010338252
+      outSlope: -0.010338252
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 3.0958087
-      value: 0.19909625
-      inSlope: 0.045423087
-      outSlope: 0.045423087
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.6701552
       outWeight: 0
     m_PreInfinity: 0
     m_PostInfinity: 0
@@ -220,26 +200,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 2.0339036
-      value: 0.19419283
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 3.0339036
-      value: 0.19419283
-      inSlope: 0
-      outSlope: 0
+      time: 0.00006933301
+      value: 0.000047533773
+      inSlope: -0.010338252
+      outSlope: -0.010338252
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
+    m_PreInfinity: 0
+    m_PostInfinity: 0
     m_RotationOrder: 4
+  health: 1
+  PointsValueOnKill: 10
 --- !u!95 &2136517918375098476
 Animator:
   serializedVersion: 5
