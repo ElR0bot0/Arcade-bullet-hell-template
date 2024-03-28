@@ -47,9 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: 2
   DamagePower: 1
-  Speed: 1
+  hitbox: {fileID: 8110410163375749003}
+  Speed: 0
   Rotation: 0
-  DurationOfLife: 7
+  DurationOfLife: 0
   RelativeSpeed: 5
   startTime: 0
   endTime: 10
@@ -98,6 +99,7 @@ GameObject:
   - component: {fileID: 5662346620959863609}
   - component: {fileID: 8785948580229889332}
   - component: {fileID: 190285096738808474}
+  - component: {fileID: 715975392970443746}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -266,6 +268,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.07144727, y: 0.051376216}
   m_EdgeRadius: 0
+--- !u!114 &715975392970443746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110410163375749003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72b56c164ce7824eba324917c700bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: 0
+  DamagePower: 1
 --- !u!1001 &5342139814538831043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,11 +312,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.751
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0102
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.z

@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62c3371aad6958c45a71e0bced703ac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objective: 0
+  objective: 2
   DamagePower: 1
+  hitbox: {fileID: 7266209812865692708}
   Speed: 1
   Rotation: 0
   DurationOfLife: 7
@@ -94,6 +95,7 @@ GameObject:
   - component: {fileID: 7761438169346656860}
   - component: {fileID: 6348383986979098715}
   - component: {fileID: 1180774273604016152}
+  - component: {fileID: 4167435985293171264}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -213,3 +215,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.010048899, y: 0.010041338}
   m_EdgeRadius: 0
+--- !u!114 &4167435985293171264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7266209812865692708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72b56c164ce7824eba324917c700bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: 0
+  DamagePower: 1

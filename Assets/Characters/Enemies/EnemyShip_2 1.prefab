@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6639125214963792797}
   - component: {fileID: 751088722979513001}
   m_Layer: 0
-  m_Name: EnemyShip_2
+  m_Name: EnemyShip_2 1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1624904066, guid: 0fcb78d8b71e541459187eb5abf4ca41, type: 3}
+  m_Sprite: {fileID: 1655632577, guid: 0fcb78d8b71e541459187eb5abf4ca41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -283,18 +283,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00028239936, y: 0.004595533}
+  m_Offset: {x: 0.00026152283, y: 0.000608854}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5055588, y: 0.38188934}
-    oldSize: {x: 0.05, y: 0.04}
+    pivot: {x: 0.50134057, y: 0.49337006}
+    oldSize: {x: 0.07, y: 0.05}
     newSize: {x: 0.08, y: 0.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.050577782, y: 0.04041073}
+  m_Size: {x: 0.07051061, y: 0.051283494}
   m_EdgeRadius: 0
 --- !u!114 &3303822427905247292
 MonoBehaviour:
@@ -321,14 +321,14 @@ PrefabInstance:
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: Spawned
       value: 
-      objectReference: {fileID: 5304952647043279188, guid: 60409e51c54363a498955453d3ba16a4, type: 3}
+      objectReference: {fileID: 5304952647043279188, guid: 000c7b1c2405dd943833aad53b690bca, type: 3}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: BulletObjective
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnedRotation
-      value: -135
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnedObjective
@@ -344,11 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0349
+      value: -0.0145
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.z

@@ -48,5 +48,7 @@ MonoBehaviour:
   Spawned: {fileID: 5304952647043279188, guid: 7ee067cad668c7840adcb76637217b70, type: 3}
   SpawnedLife: 5
   SpawnedSpeed: 1
+  SpawnedRotation: 0
   spawner: 0
   FiringRate: 0.5
+  spawnedInstance: {fileID: 0}

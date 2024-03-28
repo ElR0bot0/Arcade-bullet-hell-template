@@ -52,7 +52,7 @@ namespace Assets.Scripts.General
             if (Spawned)
             {
                 spawnedInstance = Instantiate(Spawned, transform.position, Quaternion.identity);
-                spawnedInstance.GetComponent<Spawnable>().objective = (Bullet.Objective)SpawnedObjective;
+                spawnedInstance.GetComponent<Spawnable>().objective = (Spawnable.Objective)SpawnedObjective;
                 spawnedInstance.GetComponent<Spawnable>().Speed = SpawnedSpeed;
                 spawnedInstance.GetComponent<Spawnable>().DurationOfLife = SpawnedLife;
                 spawnedInstance.transform.rotation = transform.rotation;
