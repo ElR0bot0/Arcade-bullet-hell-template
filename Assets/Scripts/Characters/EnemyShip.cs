@@ -15,7 +15,7 @@ public class EnemyShip : Spawnable
     // Start is called before the first frame update
     public override void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         base.Start();
     }
     public float Health {

@@ -16,12 +16,14 @@ namespace Assets.Scripts.General
         public GameObject Spawned;
         public float SpawnedLife = 5f;
         public float SpawnedSpeed = 1f;
+        public float SpawnedRotation = 0f;
 
         [Header("Spawner Attributes")]
         [SerializeField] private SpawnerType spawner;
         [SerializeField] public float FiringRate = 0.5f;
 
-        private GameObject spawnedInstance;
+
+        [HideInInspector] public GameObject spawnedInstance;
         private float timer = 0f;
 
         // Start is called before the first frame update
@@ -45,7 +47,7 @@ namespace Assets.Scripts.General
             }
         }
 
-        public void Fire()
+        public virtual void Fire()
         {
             if (Spawned)
             {
@@ -54,6 +56,9 @@ namespace Assets.Scripts.General
                 spawnedInstance.GetComponent<Spawnable>().Speed = SpawnedSpeed;
                 spawnedInstance.GetComponent<Spawnable>().DurationOfLife = SpawnedLife;
                 spawnedInstance.transform.rotation = transform.rotation;
+                Transform firstChildTransform = spawnedInstance.transform.GetChild(0);
+                // Rotate the first child based on EnemyRotation
+                firstChildTransform.rotation = Quaternion.Euler(0f, 0f, SpawnedRotation);
             }
         }
     }
