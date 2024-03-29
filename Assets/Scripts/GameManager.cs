@@ -7,13 +7,13 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
-    int score=0;
+    static int score=0;
     private void Update()
     {
         scoreText.text=score.ToString();
     }
     public void ScoreUpdate(int ScoreIncrement)
     {
-        score =+ ScoreIncrement;
+        score += ScoreIncrement;
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6639125214963792797}
   - component: {fileID: 751088722979513001}
   m_Layer: 0
-  m_Name: EnemyShip_2
+  m_Name: PurpleShip(BigBomba)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,14 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: 2
-  DamagePower: 1
+  DamagePower: 3
   hitbox: {fileID: 8110410163375749003}
   Speed: 0
-  Rotation: 0
   DurationOfLife: 0
   RelativeSpeed: 5
-  startTime: 0
-  endTime: 10
   trajectoryX:
     serializedVersion: 2
     m_Curve:
@@ -86,7 +83,7 @@ MonoBehaviour:
     m_PostInfinity: 0
     m_RotationOrder: 4
   health: 1
-  PointsValueOnKill: 10
+  PointsValueOnKill: 100
 --- !u!50 &751088722979513001
 Rigidbody2D:
   serializedVersion: 4
@@ -192,7 +189,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1624904066, guid: 0fcb78d8b71e541459187eb5abf4ca41, type: 3}
+  m_Sprite: {fileID: 1672076128, guid: 0fcb78d8b71e541459187eb5abf4ca41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -283,18 +280,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00028239936, y: 0.004595533}
+  m_Offset: {x: 0.000045202672, y: -0.000048457645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5055588, y: 0.38188934}
-    oldSize: {x: 0.05, y: 0.04}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.05, y: 0.05}
     newSize: {x: 0.08, y: 0.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.050577782, y: 0.04041073}
+  m_Size: {x: 0.050233126, y: 0.05033329}
   m_EdgeRadius: 0
 --- !u!114 &3303822427905247292
 MonoBehaviour:
@@ -310,6 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: 0
   DamagePower: 1
+  PointsValueOnKill: 0
 --- !u!1001 &5342139814538831043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -321,18 +319,50 @@ PrefabInstance:
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: Spawned
       value: 
-      objectReference: {fileID: 5304952647043279188, guid: 60409e51c54363a498955453d3ba16a4, type: 3}
+      objectReference: {fileID: 5304952647043279188, guid: 26a9578b022176b4799ac40e1cabb6bd, type: 3}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: FiringRate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: SpawnAngle
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: SpawnRadius
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: SpawnedLife
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: SpawnedSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: BulletObjective
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnedRotation
-      value: -135
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: SemicircleRadius
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnedObjective
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: NumberOfSpawnPoints
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: ProjectileRotationtype
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalScale.x
@@ -344,11 +374,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0349
+      value: -0.074
       objectReference: {fileID: 0}
     - target: {fileID: 3568691131433536411, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: m_LocalPosition.z

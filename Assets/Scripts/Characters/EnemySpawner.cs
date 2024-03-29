@@ -19,5 +19,13 @@ public class EnemySpawner : Spawner
             base.Update();
         }
     }
+    public override void Start()
+    {
+        base.Start();
+        for(int i = 0; i < transform.childCount; i++) {
+            var ChildDesabled = transform.GetChild(i).gameObject;
+            ChildDesabled.SetActive(false);
+        }
+    }
 
 }

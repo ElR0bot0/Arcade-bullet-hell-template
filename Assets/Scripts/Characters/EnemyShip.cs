@@ -15,6 +15,7 @@ public class EnemyShip : Spawnable
     // Start is called before the first frame update
     public override void Start()
     {
+        hitbox.GetComponent<HitBox>().PointsValueOnKill= PointsValueOnKill;
         animator = GetComponentInChildren<Animator>();
         base.Start();
     }
@@ -32,7 +33,6 @@ public class EnemyShip : Spawnable
     }
 
     public override void Dies(){
-        FindObjectOfType<GameManager>().ScoreUpdate(PointsValueOnKill);
         base.Dies();
     }
 }

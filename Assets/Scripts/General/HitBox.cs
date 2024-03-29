@@ -14,7 +14,9 @@ namespace Assets.Scripts.General
         public enum Objective : int { None = 0, All = 1, Player = 2, Enemy = 3 }
         [HideInInspector] public Objective objective;
         [HideInInspector] public float DamagePower = 1;
+        [HideInInspector] public int PointsValueOnKill = 0;
         GameObject parentSpawnableObject;
+
         private void Start()
         {
             parentSpawnableObject = gameObject.transform.parent.gameObject;
@@ -44,6 +46,7 @@ namespace Assets.Scripts.General
         }
         public void Dies()
         {
+            FindObjectOfType<GameManager>().ScoreUpdate(PointsValueOnKill);
             Destroy(parentSpawnableObject);
         }
     }

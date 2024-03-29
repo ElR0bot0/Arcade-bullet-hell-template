@@ -45,7 +45,7 @@ public class MovingBackground : MonoBehaviour
         Debug.Log(PosicionInicial2.x);
         float NuevaPosicion1 = Mathf.Repeat(Time.time * BackgroundSpeed + PosicionInicial1.x, BackgroundWidth + PosicionInicial2.x - 0.1f);
         float NuevaPosicion2 = Mathf.Repeat(Time.time * BackgroundSpeed + PosicionInicial2.x, BackgroundWidth + PosicionInicial2.x - 0.1f);
-        BackgroundClone1.transform.position = PosicionInicial2 + Vector3.left * NuevaPosicion1; 
-        BackgroundClone2.transform.position = PosicionInicial2 + Vector3.left * NuevaPosicion2;
+        BackgroundClone1.transform.position = transform.position+ PosicionInicial2 + Vector3.left * NuevaPosicion1; 
+        BackgroundClone2.transform.position = transform.position + PosicionInicial2 + Vector3.left * NuevaPosicion2;
     }
 }

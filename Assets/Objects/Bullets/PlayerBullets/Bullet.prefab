@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objective: 0
   DamagePower: 1
+  PointsValueOnKill: 0
 --- !u!1 &5304952647043279188
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +158,7 @@ GameObject:
   - component: {fileID: 7536470726961823912}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -194,11 +195,8 @@ MonoBehaviour:
   DamagePower: 1
   hitbox: {fileID: 4646623816085995192}
   Speed: 1
-  Rotation: 0
   DurationOfLife: 7
   RelativeSpeed: 5
-  startTime: 0
-  endTime: 10
   trajectoryX:
     serializedVersion: 2
     m_Curve:

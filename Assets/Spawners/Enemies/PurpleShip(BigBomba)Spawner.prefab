@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 268571833406048828}
   - component: {fileID: 2027698084019840965}
   m_Layer: 0
-  m_Name: SpawnerEnemyShip_1
+  m_Name: PurpleShip(BigBomba)Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,15 +47,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnedObjective: 3
-  Spawned: {fileID: 1020294301227955522, guid: 0a2bb60ee8cf88d4ebc8517144dfe84f, type: 3}
+  Spawned: {fileID: 1020294301227955522, guid: 848360e1296b17f4c938008be7d3653f, type: 3}
   SpawnedLife: 5
   SpawnedSpeed: 0.5
+  ProjectileRotationtype: 0
+  SpawnedRotation: 0
+  DamagePower: 1
   spawner: 0
   FiringRate: 0.5
+  NumberOfSpawnPoints: 1
+  SpawnAngle: 30
+  SpawnRadius: 0.001
   spawnedInstance: {fileID: 0}
   StartTime: 0
   EndTime: 10
-  EnemyRotation: 90
 --- !u!1 &3575946097434969476
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 3575946097434969476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.0096, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -129,7 +134,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1655632577, guid: 0fcb78d8b71e541459187eb5abf4ca41, type: 3}
+  m_Sprite: {fileID: 1672076128, guid: 0fcb78d8b71e541459187eb5abf4ca41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

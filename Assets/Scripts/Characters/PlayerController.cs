@@ -50,8 +50,7 @@ public class PlayerController : MonoBehaviour
     {
             int count = rb.Cast(direction,movementFilter, castCollisions, moveSpeed * Time.fixedDeltaTime+collisionOffset);
             if(count==0){
-                rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
-                //Aqui defino los booleanos de la
+                rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * direction);
                 if(direction.y>0){
                     animator.SetBool("Mvdwn", false);
                     animator.SetBool("Mvup", true);

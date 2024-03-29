@@ -21,7 +21,6 @@ namespace Assets.Scripts.General
 
         [Header("Movement Attributes")]
         public float Speed = 1f;
-        public float Rotation = 0f;
         public float DurationOfLife = 0f;
         private Vector2 spawnpoint;
         private float timer = 0f;
@@ -29,8 +28,6 @@ namespace Assets.Scripts.General
 
         [Header("Relative Movement Attributes")]
         public float RelativeSpeed = 5f; // Speed of the object
-        public float startTime = 0f; // Starting time
-        public float endTime = 10f; // Ending time
         public AnimationCurve trajectoryX; // Animation curve for X position
         public AnimationCurve trajectoryY; // Animation curve for Y position
         private Vector2 RelativePoint;
@@ -60,12 +57,6 @@ namespace Assets.Scripts.General
 
         private Vector2 RelativeMovement(float timer)
         {
-            // If we reached the end of the trajectory, reset time
-            if (timer > endTime)
-            {
-                timer = startTime;
-            }
-
             // Evaluate trajectory curves to get position
             float x = trajectoryX.Evaluate(timer);
             float y = trajectoryY.Evaluate(timer);
