@@ -29,16 +29,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         Camera = FindObjectOfType<CameraMovement>();
-        if(Camera != null && Camera.enabled)
-        {
-            CameraMoveSpeed = Camera.cameraSpeed;
-        }
         rb=GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
         if (Camera != null && Camera.enabled)
         {
@@ -48,14 +44,18 @@ public class PlayerController : MonoBehaviour
         {
             CameraMoveSpeed = 0f;
         }
-        rb.MovePosition(Vector3.up *CameraMoveSpeed*  Time.deltaTime);
+        // Calculate new player position based on camera velocity
+        Vector2 newPosition = rb.position + new Vector2(CameraMoveSpeed * Time.deltaTime, 0f);
+
+        // Apply horizontal movement to the player
+        rb.MovePosition(newPosition);
         if (movementInput!= Vector2.zero){
             bool success = TryMove(movementInput);
             
             if(!success){
                 success = TryMove(new Vector2(movementInput.x, 0));
                 if(!success){
-                    _ = TryMove(new Vector2(movementInput.y, 0));
+                    _ = TryMove(new Vector2(0, movementInput.y));
                 }
             }
         }else{
@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     {
             int count = rb.Cast(direction,movementFilter, castCollisions, moveSpeed * Time.fixedDeltaTime+collisionOffset);
             if(count==0){
-                rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * direction);
+                rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * direction + new Vector2(CameraMoveSpeed * Time.deltaTime, 0f)) ;
                 if(direction.y>0){
                     animator.SetBool("Mvdwn", false);
                     animator.SetBool("Mvup", true);

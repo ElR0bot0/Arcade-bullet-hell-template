@@ -11,7 +11,6 @@ namespace Assets.Scripts.Objects.PowerUps
     {
         public virtual void OnTriggerEnter2D(Collider2D other)
         {
-            Debug.Log("si se encuentra");
             if (other.gameObject.CompareTag("Player"))
             {
                 Destroy(this.gameObject);

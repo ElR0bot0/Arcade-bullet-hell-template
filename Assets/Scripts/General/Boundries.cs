@@ -11,7 +11,7 @@ namespace Assets.Scripts.General
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if(!other.gameObject.CompareTag("Player") && !other.gameObject.transform.parent.gameObject.CompareTag("Enemy"))
+            if(!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Untagged") && !other.gameObject.transform.parent.gameObject.CompareTag("Enemy"))
             {
                 if (other.gameObject.transform.parent.gameObject.CompareTag("Bullet"))
                 {

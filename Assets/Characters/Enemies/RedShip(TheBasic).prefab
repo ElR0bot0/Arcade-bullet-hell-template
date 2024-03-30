@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3324719223849843601}
   - component: {fileID: 6639125214963792797}
+  - component: {fileID: 6546279457546929540}
   m_Layer: 0
   m_Name: RedShip(TheBasic)
   m_TagString: Enemy
@@ -50,9 +51,6 @@ MonoBehaviour:
   hitbox: {fileID: 8110410163375749003}
   Speed: 0
   DurationOfLife: 0
-  RelativeSpeed: 5
-  startTime: 0
-  endTime: 10
   trajectoryX:
     serializedVersion: 2
     m_Curve:
@@ -85,6 +83,33 @@ MonoBehaviour:
     m_RotationOrder: 4
   health: 1
   PointsValueOnKill: 10
+--- !u!50 &6546279457546929540
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020294301227955522}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8110410163375749003
 GameObject:
   m_ObjectHideFlags: 0

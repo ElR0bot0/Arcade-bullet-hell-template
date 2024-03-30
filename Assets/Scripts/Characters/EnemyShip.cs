@@ -10,6 +10,8 @@ public class EnemyShip : Spawnable
     [Header("Stats")]
     public float health = 1;
     public int PointsValueOnKill=10;
+    public GameObject stoppingPoint;
+    [HideInInspector]public bool IsStopped = false;
 
 
     // Start is called before the first frame update
@@ -18,6 +20,14 @@ public class EnemyShip : Spawnable
         hitbox.GetComponent<HitBox>().PointsValueOnKill= PointsValueOnKill;
         animator = GetComponentInChildren<Animator>();
         base.Start();
+    }
+    public override void FixedUpdate()
+    {
+        if(IsStopped)
+        {
+            base.FixedUpdate();
+        }
+        
     }
     public float Health {
         set{

@@ -10,7 +10,6 @@ public class PlayerBulletSpawner : Spawner
     {
         if (isFiring)
         {
-            Debug.Log("Esta cambiandolo");
             base.Update();
         }
     }
