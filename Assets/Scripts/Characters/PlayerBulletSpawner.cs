@@ -5,8 +5,13 @@ using UnityEngine;
 
 public class PlayerBulletSpawner : Spawner
 {
+    public bool isFiring = false;
     public override void Update()
     {
-        
+        if (isFiring)
+        {
+            Debug.Log("Esta cambiandolo");
+            base.Update();
+        }
     }
 }

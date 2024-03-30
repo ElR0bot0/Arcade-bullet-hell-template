@@ -13,8 +13,8 @@ namespace Assets.Scripts.Objects.PowerUps
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                var playerBulletQuantity = other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().NumberOfSpawnPoints;
-                other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().NumberOfSpawnPoints = playerBulletQuantity+2;
+                var PlayerFireRate = other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().FiringRate;
+                other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().FiringRate = PlayerFireRate* 0.75f;
             }
             base.OnTriggerEnter2D(other);
         }

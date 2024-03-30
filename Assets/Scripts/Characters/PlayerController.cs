@@ -1,19 +1,22 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    //Declaracion para movimiento y animacion
+    [Header("Movimiento y Animacion")]
     Vector2 movementInput;
     public float collisionOffset = 0.05f;
-    public float moveSpeed =1f;
+    public float moveSpeed = 1f;
     public ContactFilter2D movementFilter;
+    private float CameraMoveSpeed = 0f;
+    private CameraMovement Camera;
     Animator animator;
 
-    //Declaracion para Bullets y daño
+    [Header("BulletSpawner")]
     public PlayerBulletSpawner BulletSpawner;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     Rigidbody2D rb;
@@ -21,29 +24,59 @@ public class PlayerController : MonoBehaviour
 
 
 
+
     // Start is called before the first frame update
     void Start()
     {
+        Camera = FindObjectOfType<CameraMovement>();
+        if(Camera != null && Camera.enabled)
+        {
+            CameraMoveSpeed = Camera.cameraSpeed;
+        }
         rb=GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    private void FixedUpdate()
+    private void Update()
     {
-        if(movementInput!= Vector2.zero){
+        if (Camera != null && Camera.enabled)
+        {
+            CameraMoveSpeed = Camera.cameraSpeed;
+        }
+        else
+        {
+            CameraMoveSpeed = 0f;
+        }
+        rb.MovePosition(Vector3.up *CameraMoveSpeed*  Time.deltaTime);
+        if (movementInput!= Vector2.zero){
             bool success = TryMove(movementInput);
             
             if(!success){
                 success = TryMove(new Vector2(movementInput.x, 0));
                 if(!success){
-                    success = TryMove(new Vector2(movementInput.y, 0));
+                    _ = TryMove(new Vector2(movementInput.y, 0));
                 }
             }
         }else{
             animator.SetBool("Mvdwn", false);
             animator.SetBool("Mvup", false);
         }
+        // Check if the left mouse button is being held down
+        if (Input.GetMouseButton(0))
+        {
+            // Execute code while the left mouse button is being held down
+            isFiring = true;
+            BulletSpawner.isFiring = isFiring;
+        }
+        else if (isFiring)
+        {
+            // Execute code when the left mouse button is released
+            isFiring = false;
+            BulletSpawner.isFiring = isFiring;
+        }
+
+        
     }
 
     private bool TryMove(Vector2 direction)
@@ -73,15 +106,6 @@ public class PlayerController : MonoBehaviour
 
     public void OnFire(InputValue value)
     {
-       
-        if (value.isPressed)
-        {
-            Debug.Log(value.ToString());
-            isFiring = true;
-        }
-        else
-        {
-            isFiring = false;
-        }
+       //esto no se como hacer para que funcione la verdad, algun dia lo cambiare pero hasta entonces 
     }
 }

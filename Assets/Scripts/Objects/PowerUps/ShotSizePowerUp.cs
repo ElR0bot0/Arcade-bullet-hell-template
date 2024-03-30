@@ -13,8 +13,8 @@ namespace Assets.Scripts.Objects.PowerUps
         {
             if (other.gameObject.CompareTag("Player"))
             {
-                var playerBulletQuantity = other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().NumberOfSpawnPoints;
-                other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().NumberOfSpawnPoints = playerBulletQuantity+2;
+                var PlayerBulletSize = other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().Size;
+                other.gameObject.transform.GetChild(0).gameObject.GetComponent<PlayerBulletSpawner>().Size = PlayerBulletSize + 0.5f;
             }
             base.OnTriggerEnter2D(other);
         }

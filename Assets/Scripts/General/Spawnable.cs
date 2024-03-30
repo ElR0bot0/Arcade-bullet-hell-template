@@ -29,7 +29,6 @@ namespace Assets.Scripts.General
         [Header("Relative Movement Attributes")]
         public AnimationCurve trajectoryX; // Animation curve for X position
         public AnimationCurve trajectoryY; // Animation curve for Y position
-        private Vector2 RelativePoint;
         // Start is called before the first frame update
         public virtual void Start()
         {

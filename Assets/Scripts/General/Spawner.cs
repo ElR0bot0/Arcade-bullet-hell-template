@@ -20,6 +20,7 @@ namespace Assets.Scripts.General
         public ProjectileRotationType ProjectileRotationtype = ProjectileRotationType.Absolute;
         public float SpawnedRotation = 0f;
         public float DamagePower = 1;
+        public float Size = 1;
 
         [Header("Spawner Attributes")]
         [SerializeField] private SpawnerType spawner;
@@ -87,6 +88,7 @@ namespace Assets.Scripts.General
             spawnedInstance = Instantiate(Spawned, SpawnPoint, Quaternion.identity);
             spawnedInstance.GetComponent<Spawnable>().objective = (Spawnable.Objective)SpawnedObjective;
             spawnedInstance.GetComponent<Spawnable>().Speed = SpawnedSpeed;
+            spawnedInstance.transform.localScale = new Vector3(Size,Size,Size);
             spawnedInstance.GetComponent<Spawnable>().DamagePower = DamagePower;
             spawnedInstance.GetComponent<Spawnable>().DurationOfLife = SpawnedLife;
             spawnedInstance.transform.rotation = transform.rotation;
