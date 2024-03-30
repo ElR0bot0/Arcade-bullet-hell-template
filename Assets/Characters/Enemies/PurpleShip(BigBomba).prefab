@@ -51,7 +51,6 @@ MonoBehaviour:
   hitbox: {fileID: 8110410163375749003}
   Speed: 0
   DurationOfLife: 0
-  RelativeSpeed: 5
   trajectoryX:
     serializedVersion: 2
     m_Curve:
@@ -71,16 +70,214 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.00006933301
-      value: 0.000047533773
-      inSlope: -0.010338252
-      outSlope: -0.010338252
-      tangentMode: 34
+      time: 0
+      value: 0
+      inSlope: -0.000779172
+      outSlope: -0.000779172
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 0.2939813
+      value: -0.0015956778
+      inSlope: 0.056559786
+      outSlope: 0.056559786
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.38360262
+      value: 0.04360749
+      inSlope: -0.0002951096
+      outSlope: -0.0002951096
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6501415
+      value: -0.06681288
+      inSlope: -0.00037388303
+      outSlope: -0.00037388303
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.88649786
+      value: 0.082071416
+      inSlope: -0.0002464472
+      outSlope: -0.0002464472
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.1434648
+      value: -0.03927215
+      inSlope: -0.026928589
+      outSlope: -0.026928589
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.3461612
+      value: 0.0540581
+      inSlope: 0.013992556
+      outSlope: 0.013992556
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.4317311
+      value: -0.019122332
+      inSlope: -0.024636732
+      outSlope: -0.024636732
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.4928868
+      value: 0.02995501
+      inSlope: -0.00017572097
+      outSlope: -0.00017572097
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.9800951
+    - serializedVersion: 3
+      time: 1.5434878
+      value: -0.008922034
+      inSlope: 0.0011324531
+      outSlope: 0.0011324531
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.586197
+      value: 0.021073215
+      inSlope: 0.0015563861
+      outSlope: 0.0015563861
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1.6246196
+      value: -0.013598399
+      inSlope: -0.0005764192
+      outSlope: -0.0005764192
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1.6487068
+      value: 0.01342128
+      inSlope: 0.0035557167
+      outSlope: 0.0035557167
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1.6825851
+      value: -0.012643164
+      inSlope: -0.0037174083
+      outSlope: -0.0037174083
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1.705059
+      value: 0.007819342
+      inSlope: -0.00093190226
+      outSlope: -0.00093190226
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.7322998
+      value: -0.009121705
+      inSlope: -0.000286028
+      outSlope: -0.000286028
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.7583898
+      value: 0.004616062
+      inSlope: 0.0036030193
+      outSlope: 0.0036030193
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.7955679
+      value: -0.005248056
+      inSlope: 0.008964574
+      outSlope: 0.008964574
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.17728136
+    - serializedVersion: 3
+      time: 1.8318259
+      value: 0.0036826998
+      inSlope: -0.048534237
+      outSlope: -0.048534237
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.25529453
+    - serializedVersion: 3
+      time: 1.8609244
+      value: -0.007063547
+      inSlope: -0.016563414
+      outSlope: -0.016563414
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.9078419
+      value: 0.0061642304
+      inSlope: 0.011996893
+      outSlope: 0.011996893
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.9368744
+      value: -0.004853823
+      inSlope: -0.014612247
+      outSlope: -0.014612247
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 2
+      value: 0
+      inSlope: 0.0012479719
+      outSlope: 0.0012479719
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.40371746
       outWeight: 0
-    m_PreInfinity: 0
-    m_PostInfinity: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
     m_RotationOrder: 4
   health: 1
   PointsValueOnKill: 100
@@ -329,12 +526,16 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
+      propertyPath: DamagePower
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnRadius
       value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnedLife
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1319528353775541189, guid: 8a47596832f8c114795ef3ea0377c0b1, type: 3}
       propertyPath: SpawnedSpeed

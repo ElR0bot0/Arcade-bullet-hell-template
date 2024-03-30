@@ -29,8 +29,6 @@ public class MovingBackground : MonoBehaviour
                 // Get the width of the object (size in the X direction)
                 BackgroundWidth = bounds.size.x;
 
-                // Print the width to the console
-                Debug.Log("Width of the object: " + BackgroundWidth);
             }
             PosicionInicial2 = new Vector3(BackgroundWidth-0.1f, 0f, 0f);
             BackgroundClone2 = Instantiate(Background, PosicionInicial2, Quaternion.identity);
@@ -41,8 +39,6 @@ public class MovingBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(PosicionInicial1.x);
-        Debug.Log(PosicionInicial2.x);
         float NuevaPosicion1 = Mathf.Repeat(Time.time * BackgroundSpeed + PosicionInicial1.x, BackgroundWidth + PosicionInicial2.x - 0.1f);
         float NuevaPosicion2 = Mathf.Repeat(Time.time * BackgroundSpeed + PosicionInicial2.x, BackgroundWidth + PosicionInicial2.x - 0.1f);
         BackgroundClone1.transform.position = transform.position+ PosicionInicial2 + Vector3.left * NuevaPosicion1; 

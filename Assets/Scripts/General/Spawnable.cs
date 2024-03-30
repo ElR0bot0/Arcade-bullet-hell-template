@@ -27,7 +27,6 @@ namespace Assets.Scripts.General
 
 
         [Header("Relative Movement Attributes")]
-        public float RelativeSpeed = 5f; // Speed of the object
         public AnimationCurve trajectoryX; // Animation curve for X position
         public AnimationCurve trajectoryY; // Animation curve for Y position
         private Vector2 RelativePoint;
@@ -44,8 +43,10 @@ namespace Assets.Scripts.General
         {
             if (timer > DurationOfLife && DurationOfLife!=0) Destroy(this.gameObject);
             timer += Time.deltaTime;
-            RelativePoint = Movement(timer);
-            transform.position = RelativePoint + RelativeMovement(timer);
+            transform.position = Movement(timer);
+            float x = trajectoryX.Evaluate(timer);
+            float y = trajectoryY.Evaluate(timer);
+            transform.GetChild(0).transform.localPosition = RelativeMovement(timer);
         }
 
         private Vector2 Movement(float timer)
@@ -57,12 +58,13 @@ namespace Assets.Scripts.General
 
         private Vector2 RelativeMovement(float timer)
         {
-            // Evaluate trajectory curves to get position
             float x = trajectoryX.Evaluate(timer);
             float y = trajectoryY.Evaluate(timer);
 
-            // Move the object
-            return new Vector2(x, y) * RelativeSpeed;
+            // Calculate relative position based on the parent's position
+            Vector2 relativePosition = new(x, y);
+
+            return relativePosition;
         }
 
         

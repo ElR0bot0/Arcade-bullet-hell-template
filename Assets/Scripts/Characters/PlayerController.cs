@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour
     public PlayerBulletSpawner BulletSpawner;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     Rigidbody2D rb;
+    private bool isFiring;
 
-    
 
 
     // Start is called before the first frame update
@@ -66,12 +66,22 @@ public class PlayerController : MonoBehaviour
                 return false;
             }
     }
-    private void OnMove(InputValue movementValue)
+    public void OnMove(InputValue movementValue)
     {
         movementInput=movementValue.Get<Vector2>();
     }
 
-    private void OnFire(){
-        BulletSpawner.Fire();
+    public void OnFire(InputValue value)
+    {
+       
+        if (value.isPressed)
+        {
+            Debug.Log(value.ToString());
+            isFiring = true;
+        }
+        else
+        {
+            isFiring = false;
+        }
     }
 }
