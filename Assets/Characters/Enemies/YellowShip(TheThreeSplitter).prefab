@@ -51,7 +51,7 @@ MonoBehaviour:
   hitbox: {fileID: 8110410163375749003}
   Speed: 0
   DurationOfLife: 0
-  RelativeSpeed: 5
+  rotationSpeed: 0
   trajectoryX:
     serializedVersion: 2
     m_Curve:
@@ -84,6 +84,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   health: 1
   PointsValueOnKill: 50
+  stoppingPoint: {fileID: 0}
+  IsStopped: 0
 --- !u!50 &751088722979513001
 Rigidbody2D:
   serializedVersion: 4
@@ -302,7 +304,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8110410163375749003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72b56c164ce7824eba324917c700bb3, type: 3}
+  m_Script: {fileID: 11500000, guid: b5b569c028ae476418213fd9bb1d6560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objective: 0
