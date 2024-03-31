@@ -29,6 +29,7 @@ namespace Assets.Scripts.General
         private float CameraMoveSpeed;
         private CameraMovement Camera;
 
+
         Rigidbody2D rb;
 
         [Header("Relative Movement Attributes")]
@@ -48,6 +49,7 @@ namespace Assets.Scripts.General
         // Update is called once per frame
         public virtual void FixedUpdate()
         {
+
             timer += Time.deltaTime;
             transform.GetChild(0).transform.Rotate(Vector3.forward, rotationSpeed * Time.deltaTime);
             CameraMoveSpeed = Camera != null && Camera.enabled ? Camera.cameraSpeed : 0f;

@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     public void PlayGame()
     {
-        SceneManager.LoadScene("Testing");//cambiar esto despues a "Level 1"
+        SceneManager.LoadScene("Level 1");//cambiar esto despues a "Level 1"
     }
     public void Settings()
     {

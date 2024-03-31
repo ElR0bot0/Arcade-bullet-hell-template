@@ -7,16 +7,23 @@ using Unity.VisualScripting;
 public class EnemySpawner : Spawner
 {
     [Header("Activation attributes")]
-    public float StartTime = 0f;
     public float EndTime = 0f;
-
     private float time = 0f;
+    public GameObject stoppingPoint;
+    [HideInInspector] public bool IsStopped = false;
     public override void Update()
     {
-        time += Time.deltaTime;
-        if(time > StartTime && time < EndTime)
+        if(stoppingPoint)
         {
-            base.Update();
+            time += Time.deltaTime;
+            if (time < EndTime)
+            {
+                base.Update();
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
     public override void Start()

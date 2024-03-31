@@ -11,12 +11,12 @@ namespace Assets.Scripts.General
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if(!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Untagged") && !other.gameObject.transform.parent.gameObject.CompareTag("Enemy"))
+            if(!other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("Untagged") && !other.gameObject.CompareTag("PowerUp"))
             {
-                if (other.gameObject.transform.parent.gameObject.CompareTag("Bullet"))
-                {
-                    Destroy(other.gameObject.transform.parent.gameObject);
-                }
+                    if (other.gameObject.transform.parent.gameObject.CompareTag("Bullet"))
+                    {
+                        Destroy(other.gameObject.transform.parent.gameObject);
+                    }
             }
                 
         }

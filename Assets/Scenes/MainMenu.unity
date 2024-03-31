@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6668776370443921395, guid: 7c604c13d311cef4790623ae3f2e3a29, type: 3}
       propertyPath: m_text
-      value: SETTINGS
+      value: OPCIONES
       objectReference: {fileID: 0}
     - target: {fileID: 7522380601486891411, guid: 7c604c13d311cef4790623ae3f2e3a29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -675,9 +675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6668776370443921395, guid: 7c604c13d311cef4790623ae3f2e3a29, type: 3}
       propertyPath: m_text
-      value: 'QUIT
-
-'
+      value: SALIR
       objectReference: {fileID: 0}
     - target: {fileID: 7522380601486891411, guid: 7c604c13d311cef4790623ae3f2e3a29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1029,7 +1027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6668776370443921395, guid: 7c604c13d311cef4790623ae3f2e3a29, type: 3}
       propertyPath: m_text
-      value: START
+      value: INICIAR
       objectReference: {fileID: 0}
     - target: {fileID: 7522380601486891411, guid: 7c604c13d311cef4790623ae3f2e3a29, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

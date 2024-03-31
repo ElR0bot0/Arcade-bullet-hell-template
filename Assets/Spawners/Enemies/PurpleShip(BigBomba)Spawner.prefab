@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2027698084019840965}
   m_Layer: 0
   m_Name: PurpleShip(BigBomba)Spawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,14 +53,16 @@ MonoBehaviour:
   ProjectileRotationtype: 0
   SpawnedRotation: 0
   DamagePower: 1
+  Size: 1
   spawner: 0
   FiringRate: 0.5
   NumberOfSpawnPoints: 1
   SpawnAngle: 30
   SpawnRadius: 0.001
   spawnedInstance: {fileID: 0}
-  StartTime: 0
   EndTime: 10
+  stoppingPoint: {fileID: 0}
+  IsStopped: 0
 --- !u!1 &3575946097434969476
 GameObject:
   m_ObjectHideFlags: 0

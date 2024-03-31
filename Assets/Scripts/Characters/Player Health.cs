@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,9 +14,13 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth;
     public GameObject[] Containers;
     Animator animator;
+    MenuManager Menumanager;
+    PlayerController playerController;
     void Start()
     {
         animator = GetComponent<Animator>();
+        Menumanager = FindObjectOfType<MenuManager>();
+        playerController = GetComponent<PlayerController>();
     }
     public float Health
     {
@@ -24,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
             health = value;
             if (health <= 0)
             {
+                playerController.enabled = false;
                 animator.SetBool("Dead", true);
             }
         }
@@ -37,8 +43,9 @@ public class PlayerHealth : MonoBehaviour
     public void Dies()
     {
         Destroy(gameObject);
+        Menumanager.DeadScreen();
     }
-
+    
     private void Update()
     {
         if(health > maxHealth)
@@ -47,13 +54,12 @@ public class PlayerHealth : MonoBehaviour
         }
         for (int i = 0; i < Containers.Length; i++)
         {
-            if(i < health)
+            Object fill = Containers[i].transform.GetChild(0);
+            if (i < health)
             {
-                Object fill = Containers[i].transform.GetChild(0);
                 fill.GameObject().SetActive(true);
             }else
             {
-                Object fill = Containers[i].transform.GetChild(0);
                 fill.GameObject().SetActive(false);
             }
 

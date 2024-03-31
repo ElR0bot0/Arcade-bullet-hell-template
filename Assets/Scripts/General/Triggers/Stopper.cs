@@ -14,15 +14,22 @@ namespace Assets.Scripts.General
         {
             if (!other.gameObject.CompareTag("PowerUp"))
             {
-                if (other.gameObject.transform.parent.gameObject != null)
+                if (other.CompareTag("Spawner"))
                 {
-
-                    var EnemyShipFatherObject = other.gameObject.transform.parent.gameObject;
-                    if (EnemyShipFatherObject.CompareTag("Enemy"))
+                    other.GetComponent<EnemySpawner>().IsStopped = true;
+                }
+                else
+                {
+                    if (other.gameObject.transform.parent.gameObject != null)
                     {
-                        if (EnemyShipFatherObject.GetComponent<EnemyShip>().stoppingPoint == this.gameObject)
+
+                        var EnemyShipFatherObject = other.gameObject.transform.parent.gameObject;
+                        if (EnemyShipFatherObject.CompareTag("Enemy"))
                         {
-                            EnemyShipFatherObject.GetComponent<EnemyShip>().IsStopped = true;
+                            if (EnemyShipFatherObject.GetComponent<EnemyShip>().stoppingPoint == this.gameObject)
+                            {
+                                EnemyShipFatherObject.GetComponent<EnemyShip>().IsStopped = true;
+                            }
                         }
                     }
                 }
